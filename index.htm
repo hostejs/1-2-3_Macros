@@ -5,13 +5,15 @@
     <script src="macros.js"></script>
     <script>
       function addDataModel(){
+        alert('test');
         var section = document.createElement('span');
         section.innerText = document.getElementId('dataModelName').text;
+        alert(section.innerText);
         document.body.appendChild(section);
       }
     </script>
   </head>
-  <body>x
+  <body>xx<br/>
     <input type="text" id="dataModelName"/><input type="button" value="+" onclick="addDataModel();"/>
   </body>
 </html>
